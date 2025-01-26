@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 180px;
+    background: linear-gradient(to bottom, #87CEEB, #c0ab99);
+  }
+  
+  .flag {
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+  }
+  
+  .stripe {
+    height: 33.33%;
+    width: 100%;
+  }
+  
+  .orange {
+    background: radial-gradient(circle, #ff8000, #ca6500);
+    position: relative;
+  }
+  
+  .white {
+    background: radial-gradient(circle, #ffffff, #c4c4c4);
+    position: relative;
+  }
+  
+  .green {
+    background: radial-gradient(circle, #138808, #096d00);
+    position: relative;
+  }
+  
+  .ashoka-chakra {
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  
+
+  .flagpole {
+    width: 10px;
+    height: 500px;
+    background: brown;
+    
+    position: absolute;
+    left: 38.5%;
+    transform: translateX(-50%);
+  }
+  
+  @keyframes sway {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(0) rotate(-4deg); }
+    50% { transform: translateX(0) rotate(0deg); }
+    75% { transform: translateX(0) rotate(4deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+  }
+  
+  .flag {
+    animation: sway 6s ease-in ;
+  }
+  
